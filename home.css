@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+body{
+    font-family:lobster,cursive;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+color: #2ccfcf;
+}
+a{
+    font-family:'lobster',cursive;
+}
+
+.profile{
+height: 650px;
+width: 100%;
+background-image: url(https://cdn.discordapp.com/attachments/926748944812347468/926750438898950144/508304.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.profile>img{
+border-radius: 50%;
+}
+
+h1{
+font-size: 54px;
+border-radius: 10px;
+padding: 5px;
+color: #2ccfcf;
+font-family: 'Imperial Script', cursive;
+font-family: 'The Nautigal', cursive;
+}
+
+p{
+font-size: 19px;
+font-family: 'Poppins', sans-serif;
+text-align: center;
+}
+
+p:nth-child(2){
+color: black;
+}
+
+p:nth-child(3){
+    color: #2ccfcf;
+}
+
+p:nth-child(1){
+    color: lightgrey;
+    width: 90%;
+    color: black;
+    opacity: 2;
+    text-decoration: black;
+}
+
+.profile>p, .profile>a{
+padding: 10px;
+font-family: 'Open Sans', sans-serif;
+border-radius: 10px;
+}
+.profile>a{
+margin-top: 25px;
+border: 1px solid #FFFFFF;
+}
+
+.about-me-container>p{
+margin-top:20px ;
+}
+
+h2{
+font-family: 'Open Sans', sans-serif;
+font-size: 36px;
+color: #2ccfcf;
+}
+
+h2:nth-child(2){
+    color: blue;
+}
+
+
+.progress>progress{
+width: 300px;
+}
+
+.work img{
+height: 200px;
+width: 250px;
+}
+
+.card{
+margin: 10px;
+text-align: center;
+background-image: url(./download\ \(2\).jpg);
+cursor: pointer;
+box-shadow: 2px 4px 3px -2px rgba(255,255,255,0.75);
+-webkit-box-shadow: 2px 4px 3px -2px rgba(255,255,255,0.75);
+-moz-box-shadow: 2px 4px 3px -2px rgba(255,255,255,0.75);
+}
+
+.card:hover{
+transform: scale(1.1);
+}
+.card>p{
+color: sandybrown;
+}
+
+/*Iteration 1 - Implement flex property to nav Bar */
+.flex{
+display: flex;
+}
+/*Iteration 2 - Use flex property and style the nav bar*/
+nav{
+position: fixed;
+height: 70px;
+width: 100%;
+background:#1E1E1E;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+nav>a{
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+padding: 25px;
+text-decoration: none;
+}
+
+nav>a:hover{
+font-weight: bold;
+color: peru;
+}
+/*Iteration 3 - Implement flex property to about part */
+.column{
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+/*Iteration 4 - Use Justify-content and Align-items to align about-me-container class*/
+.about-me-container{
+width: 250px;
+text-align: center;
+justify-content: flex-start;
+align-items: space-evenly;
+}
+/* Iteration 5 - Use Justify-content to style about and work div*/
+.work{
+min-height: 600px;
+background-image: url(https://images-ext-2.discordapp.net/external/54XnhP3bNutHic7W43YY4mDAQZLtHJFnLgDDA1GRh98/https/cdn.wallpapersafari.com/78/30/iRYrme.jpg?width=1166&height=656);
+background-repeat: no-repeat;
+background-size: cover;
+justify-content: space-evenly;
+}
+
+p:nth-child(1){
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.about{
+    min-height: 600px;
+    background-image: url(https://wallpaperaccess.com/full/1622640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    justify-content: space-evenly;
+}
+
+
+/*Iteration 6 - USe justify-content to style work,about-container, .lets-talk-container and skills div */
+.about-container{
+width: 100vw;
+justify-content: space-evenly;
+}
+.work{
+justify-content: space-evenly;
+}
+
+.skills{
+height: 600px;
+background-image: url(https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+background-repeat: no-repeat;
+background-size: cover;
+justify-content: space-evenly;
+}
+/*Iteration 7 - Implement the flex wrapping to work-container*/
+.work-container{
+width: 70%;
+justify-content: space-evenly;
+flex-wrap: wrap;
+height: 200px;
+}
+/*Iteration 8 - Make your Website Mobile Responsive using @media query*/
+
+@media only screen and (max-width: 600px){
+/* nav{
+
+} */
+nav>a{
+font-size: 10px;
+font-weight: 800;
+background-color:#7EB38C ;
+padding: 5px;
+border-radius: 5px;
+}
+nav>a:hover{
+color:black;
+}
+
+.about-container{
+flex-direction: column;
+align-items: center;
+}
+
+.about-me-container{
+margin: 7px;
+}
+.about, .work{
+padding: 10px;
+}
+}
+
+p:nth-child(2){
+    color: mistyrose;
+    font-size: 30px;
+}
+
+.pa{
+    font-weight: 20px;
+}
